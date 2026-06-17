@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<labwc_config>
+<desktops number="9" />
+<theme><name>Nord-Openbox</name></theme>
+<keyboard>
+<default />
+
+<!-- Переключение влево/вправо: Lctrl + Lalt + Left/Right -->
+<keybind key="C-A-Left"><action name="GoToDesktop" to="left" wrap="yes" /></keybind>
+<keybind key="C-A-Right"><action name="GoToDesktop" to="right" wrap="yes" /></keybind>
+
+<!-- Переключение на конкретный стол: Win + 1-9 -->
+<keybind key="W-1"><action name="GoToDesktop" to="1" /></keybind>
+<keybind key="W-2"><action name="GoToDesktop" to="2" /></keybind>
+<keybind key="W-3"><action name="GoToDesktop" to="3" /></keybind>
+<keybind key="W-4"><action name="GoToDesktop" to="4" /></keybind>
+<keybind key="W-5"><action name="GoToDesktop" to="5" /></keybind>
+<keybind key="W-6"><action name="GoToDesktop" to="6" /></keybind>
+<keybind key="W-7"><action name="GoToDesktop" to="7" /></keybind>
+<keybind key="W-8"><action name="GoToDesktop" to="8" /></keybind>
+<keybind key="W-9"><action name="GoToDesktop" to="9" /></keybind>
+
+<!-- Управление звуком (Fn+F6, F7, F8) -->
+<keybind key="XF86AudioMute"><action name="Execute"><command>wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle</command></action></keybind>
+<keybind key="XF86AudioLowerVolume"><action name="Execute"><command>wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-</command></action></keybind>
+<keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+</command></action></keybind>
+
+<!-- Горячие клавиши для открытия приложений -->
+<keybind key="W-w"><action name="Execute"><command>alacritty</command></action></keybind>
+<keybind key="W-e"><action name="Execute"><command>firefox</command></action></keybind>
+<keybind key="W-d"><action name="Execute"><command>thunar</command></action></keybind>
+<keybind key="W-s"><action name="Execute"><command>fuzzel</command></action></keybind>
+<keybind key="W-a"><action name="Execute"><command>flameshot</command></action></keybind>
+
+<!-- Закрытие активного окна (приложения) -->
+<keybind key="W-q"><action name="Close" /></keybind>
+
+</keyboard>
+</labwc_config>

@@ -1,0 +1,76 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "modules-left": [
+    "ext/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "battery",
+    "custom/power"
+  ],
+  
+ "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/powermenu.sh"
+  },
+
+  "ext/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "Рабочее пространство 1": "1",
+      "Рабочее пространство 2": "2",
+      "Рабочее пространство 3": "3",
+      "Рабочее пространство 4": "4",
+      "Рабочее пространство 5": "5",
+      "Рабочее пространство 6": "6",
+      "Рабочее пространство 7": "7",
+      "Рабочее пространство 8": "8",
+      "Рабочее пространство 9": "9",
+      "default": "•"
+    },
+    "on-click": "activate",
+    "on-scroll-up": "labwc-cli action GoToNextWorkspace",
+    "on-scroll-down": "labwc-cli action GoToPreviousWorkspace"
+  },
+  "clock": {
+    "format": "{:%H:%M %d, %a}",
+    "tooltip-format": " <big>{:%Y %B}</big>\n <tt> <small>{calendar}</small> </tt> ",
+    "locale": "ru_RU.UTF-8",
+    "actions": { "on-click-right": "mode" }
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-muted": " Mute",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+  "battery": {
+    "states": { "good": 95, "warning": 30, "critical": 15 },
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10,
+    "reverse-direction": true
+  }
+}

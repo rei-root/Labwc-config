@@ -1,0 +1,49 @@
+* {
+    font: "JetBrains Mono 12";
+    background-color: #0a0f1a;
+    text-color: #e2e8f0;
+    border-color: #1e293b;
+    selected-background-color: #151e32;
+    selected-text-color: #60a5fa;
+}
+
+window {
+    location: north east;
+    anchor: north east;
+    x-offset: 20px;
+    y-offset: 42px;
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid #1e293b;
+    padding: 10px;
+}
+
+mainbox {
+    children: [ "input", "listview" ];
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #151e32;
+    text-color: #f8fafc;
+    placeholder: "Поиск...";
+    placeholder-color: #64748b;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    spacing: 5px;
+    margin: 10px 0 0 0;
+}
+
+element {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+element normal.active, element selected {
+    background-color: #1e293b;
+    text-color: #60a5fa;
+}

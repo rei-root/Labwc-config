@@ -1,0 +1,9 @@
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+pipewire &
+wireplumber &
+pipewire-pulse &
+nm-applet --indicator &
+blueman-applet &
+swaybg -i /home/robert/Pictures/retro/retro_walpaper.jpg -m fill &
+waybar &
+mako &
