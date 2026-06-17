@@ -30,7 +30,9 @@
 <keybind key="W-e"><action name="Execute"><command>firefox</command></action></keybind>
 <keybind key="W-d"><action name="Execute"><command>thunar</command></action></keybind>
 <keybind key="W-s"><action name="Execute"><command>fuzzel</command></action></keybind>
-<keybind key="W-a"><action name="Execute"><command>flameshot</command></action></keybind>
+
+<!-- Скриншот -->
+<keybind key="Print"><action name="Execute"><command>sh -c 'grim -g &quot;$(slurp)&quot; - | wl-copy -t image/png'</command></action></keybind>
 
 <!-- Закрытие активного окна (приложения) -->
 <keybind key="W-q"><action name="Close" /></keybind>

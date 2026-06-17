@@ -43,3 +43,7 @@ xkblayout-state
 xorg-minimal
 xorg-server-xwayland
 adwaita-icon-theme
+grim
+slurp
+wl-clipboard
+viewnior
