@@ -1,7 +1,9 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", "JetBrains Mono", "Fira Code", "Roboto", "Ubuntu", sans-serif;
+    font-family:
+        "JetBrainsMono Nerd Font", "FiraCode Nerd Font", "JetBrains Mono",
+        "Fira Code", "Roboto", "Ubuntu", sans-serif;
     font-size: 13px;
     min-height: 0;
 }
@@ -14,6 +16,14 @@ window#waybar {
 
 #workspaces {
     margin: 0 4px;
+}
+
+#custom-void-menu {
+    background-image: url("/home/robert/.config/waybar/logo/Void_Linux_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 24px;
 }
 
 #workspaces button {
@@ -46,7 +56,9 @@ window#waybar {
 }
 
 @keyframes blink {
-    50% { border-bottom-color: transparent; }
+    50% {
+        border-bottom-color: transparent;
+    }
 }
 
 #clock {
@@ -56,25 +68,43 @@ window#waybar {
     letter-spacing: 0.5px;
 }
 
-#tray, #pulseaudio, #battery {
+#tray,
+#pulseaudio,
+#battery {
     padding: 0 12px;
     margin: 0 4px;
 }
 
-#battery { color: #e2e8f0; }
-#battery.charging { color: #4ade80; }
-#battery.warning { color: #facc15; }
-#battery.critical { 
-    color: #f87171; 
-    animation: blink 1.5s linear infinite; 
+#battery {
+    color: #e2e8f0;
+}
+#battery.charging {
+    color: #4ade80;
+}
+#battery.warning {
+    color: #facc15;
+}
+#battery.critical {
+    color: #f87171;
+    animation: blink 1.5s linear infinite;
 }
 
-#pulseaudio { color: #60a5fa; }
-#pulseaudio.muted { color: #f87171; }
+#pulseaudio {
+    color: #60a5fa;
+}
+#pulseaudio.muted {
+    color: #f87171;
+}
 
-#tray { padding: 0 10px; }
-#tray > .passive { -gtk-icon-effect: dim; }
-#tray > .needs-attention { -gtk-icon-effect: highlight; }
+#tray {
+    padding: 0 10px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
 
 #custom-power {
     padding: 0 12px;
