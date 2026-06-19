@@ -28,6 +28,30 @@ cp themes ~/.themes/
 ```
 sudo xbps-install -Syu $(cat Required_packages.txt)
 ```
+---
+
+## Grub Theme 
+
+If you want to install the Grab theme, you need to do the following:
+
+```
+sudo mkdir -p /boot/grub/themes
+sudo cp -r mahiro-grub /boot/grub/themes/
+sudo nano /etc/default/grub
+```
+At this point, you need to add this line to the grab config:
+```
+GRUB_THEME="/boot/grub/themes/mahiro-grub/theme.txt"
+```
+And comment out this line by adding a hash mark before the no:
+```
+GRUB_TERMINAL_OUTPUT=console
+```
+---
+## Alacritty smooth cursor 
+
+For a smooth cursor in alacritty you need to install this: 
+https://github.com/GregTheMadMonk/alacritty-smooth-cursor
 
 ---
 
