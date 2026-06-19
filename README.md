@@ -58,3 +58,13 @@ https://github.com/GregTheMadMonk/alacritty-smooth-cursor
 ## Set wallpaper
 
 To change the wallpaper, simply replace the path to it in the file /labwc/autostart "swaybg -i /home/robert/Pictures/retro/retro_walpaper.jpg -m fill &" with the path to your wallpaper
+
+---
+
+## Rice screenshot
+
+### Rice screenshot: 
+![Rice desctop](img/rice-screenshot.png)
+
+### Grub Theme:
+![Grub Theme](img/grub-theme.png)
