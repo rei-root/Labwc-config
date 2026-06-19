@@ -1,9 +1,10 @@
-/usr/libexec/polkit-gnome-authentication-agent-1 &
+/usr/libexec/xdg-desktop-portal &
 pipewire &
-wireplumber &
 pipewire-pulse &
-nm-applet --indicator &
+wireplumber &
 blueman-applet &
-swaybg -i /home/robert/Pictures/retro/retro_walpaper.jpg -m fill &
+nm-applet --indicator &
+swaybg -i ~/Pictures/1113344.jpg -m fill &
 waybar &
 mako &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
