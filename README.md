@@ -10,7 +10,7 @@
 | Win + E | Open Browser(firefox) |
 | Win + S | Shearch applications(fuzzle) |
 | Win + D | Open Thunar |
-| Win + z | Select wallpaper(swww) |
+| Win + Z | Select wallpaper(swww) |
 | Win + 1-9 | Quickly switch between workspaces |
 | Lctrl + Lalt + Right-Left | Sequential switching between workspaces |
 
