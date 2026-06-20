@@ -10,8 +10,10 @@
 | Win + E | Open Browser(firefox) |
 | Win + S | Shearch applications(fuzzle) |
 | Win + D | Open Thunar |
+| Win + z | Select wallpaper(swww) |
 | Win + 1-9 | Quickly switch between workspaces |
 | Lctrl + Lalt + Right-Left | Sequential switching between workspaces |
+
 
 ---
 
@@ -57,7 +59,7 @@ https://github.com/GregTheMadMonk/alacritty-smooth-cursor
 
 ## Set wallpaper
 
-To change the wallpaper, simply replace the path to it in the file /labwc/autostart "swaybg -i /home/robert/Pictures/retro/retro_walpaper.jpg -m fill &" with the path to your wallpaper
+The default path swww uses to look for my wallpapers is ~/Pictures/Wallpaper/. You can create the desired folder or change the current one to your own in the script at ~/.config/labwc/scripts/wallpaper-select.sh
 
 ---
 
