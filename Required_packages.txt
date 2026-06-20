@@ -47,3 +47,4 @@ grim
 slurp
 wl-clipboard
 viewnior
+awww
