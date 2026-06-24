@@ -30,6 +30,13 @@ cp -r themes ~/.themes/
 ```
 sudo xbps-install -Syu $(cat Required_packages.txt)
 ```
+
+To add user daemons for ranit you need to:
+
+```
+cp -r service ~/.config/
+```
+
 ---
 
 ## Grub Theme 
