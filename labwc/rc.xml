@@ -28,7 +28,7 @@
 <!-- Горячие клавиши для открытия приложений -->
 <keybind key="W-w"><action name="Execute"><command>alacritty</command></action></keybind>
 <keybind key="W-e"><action name="Execute"><command>firefox</command></action></keybind>
-<keybind key="W-d"><action name="Execute"><command>thunar</command></action></keybind>
+<keybind key="W-d"><action name="Execute"><command>nautilus</command></action></keybind>
 <keybind key="W-s"><action name="Execute"><command>fuzzel</command></action></keybind>
 
 <!-- Смена обоев -->

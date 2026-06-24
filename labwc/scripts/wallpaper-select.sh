@@ -14,4 +14,5 @@ if [ -z "$SELECTION" ]; then
 fi
 
 FINAL_WALL="$WALL_DIR/$SELECTION"
+
 swww img "$FINAL_WALL" --transition-type wipe --transition-step 90 --transition-fps 60
