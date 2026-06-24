@@ -23,7 +23,7 @@
 git clone https://github.com/rei-root/Labwc-config.git
 cd Labwc-config
 cp -r fuzzel labwc mako waybar alacritty ~/.config/
-cp themes ~/.themes/
+cp -r themes ~/.themes/
 ```
 (It's also a good idea to install the packages listed in "Required_packages.txt," but it's full of junk, so do it at your own risk if you want to clutter up your system)
 
